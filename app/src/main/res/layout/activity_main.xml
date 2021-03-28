@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/get_random_word_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/ten_dp"
+        android:layout_marginEnd="@dimen/ten_dp"
+        android:layout_marginBottom="@dimen/two_hundred_dp"
+        android:text="@string/get_random_word"
+        android:textAllCaps="false"
+        android:textSize="@dimen/twenty_five_sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/random_word_txt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_five_dp"
+        android:text="@string/generated_word"
+        android:textColor="@color/teal_700"
+        android:textSize="@dimen/twenty_five_sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/get_random_word_btn" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/random_word_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty_five_dp"
+        android:text="Hello World!"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/twenty_five_sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/random_word_txt_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

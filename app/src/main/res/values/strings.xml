@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WorldOfGame</string>
+    <string name="get_random_word">Get Random Word</string>
+    <string name="failed_random_word">Failed to get random word!</string>
+    <string name="send_random_word">Send random word</string>
+    <string name="generated_word">Generated word below:</string>
+</resources>
